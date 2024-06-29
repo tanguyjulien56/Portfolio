@@ -3,7 +3,6 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { ComponentPropsWithoutRef } from "react";
 import Section from "./Section";
-import ReactIcon from "./ui/icon/ReactIcon";
 
 const Code = ({ className, ...props }: ComponentPropsWithoutRef<"span">) => (
   <span
@@ -43,19 +42,23 @@ export default function Hero() {
           Développeur Full Stack React, Node.js, Next.js
         </h3>
         <p className="leading-7 [&:not(:first-child)]:">
-          je suis développeur web full stack
+          Transitioning into full stack web development, I am passionate about
+          leveraging over 15 years of experience in production{" "}
           <Code className="inline-flex items-center gap-1 rounded">
-            <ReactIcon size={16} className="inline color-primary" />
-            React
+            🧑‍🎓 engineering
           </Code>
-          En pleine reconversion professionnelle, je me passionne pour le
-          développement full stack après plus de 15 ans d'expérience en
-          ingénierie de la production, gestion de projets et amélioration
-          continue. Certifié en développement full stack et ayant réalisé des
-          projets open source, je combine mes compétences techniques avec mon
-          expertise en management. Passionné de sports et engagé dans la vie
-          associative, je gère également la communication et le site internet de
-          mon club de vélo. 🚀🚴‍♂️
+          , project management, and continuous improvement. Certified in{" "}
+          <Code className="inline-flex items-center gap-1 rounded">
+            🚀 full stack
+          </Code>
+          development and contributing to open-source projects, I merge
+          technical skills with management expertise. Outside of work, I am an
+          avid sports enthusiast and actively involved in community engagement,
+          managing communication and the website for my
+          <Code className="inline-flex items-center gap-1 rounded">
+            🚴‍♂️ cycling
+          </Code>
+          club.
         </p>
       </div>
       <div className="flex-[2] m-auto">
