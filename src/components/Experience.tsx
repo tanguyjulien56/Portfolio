@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "framer-motion";
 import Section from "./Section";
 import { Spacing } from "./Spacing";
 import { Badge } from "./ui/badge";
@@ -6,43 +8,72 @@ import ArrowLeft from "./ui/icon/ArrowLeft";
 import ArrowRight from "./ui/icon/ArrowRight";
 
 export default function Experience() {
+  const cardVariants = {
+    hidden: { opacity: 0, y: 10 },
+    visible: { opacity: 1, y: 0 },
+  };
+
+  const titleVariants = {
+    hidden: { opacity: 0, y: -10 },
+    visible: { opacity: 1, y: 0 },
+  };
   return (
     <Section className="flex flex-col">
-      <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0 text-primary">
-        Parlez de mon expérience ?
-      </h2>
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={titleVariants}
+        transition={{ duration: 0.5 }}
+      >
+        <Badge variant="outline" className="m-4">
+          Skills
+        </Badge>
+        <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0 text-primary">
+          talk about my experience
+        </h2>
+      </motion.div>
       <section className="relative ml-10 flex max-md:flex-col lg:ml-0">
         <div className="flex-1 border-l-2 border-customColors lg:border-l-0 lg:border-r-2 lg:w-1/2">
           {/* Premier Card */}
-          <Card className="custom-card-right-lg hover:shadow-lg border-1px hover:shadow-purple-500/10">
-            <div className="custom-logo-experience-mobile lg:hidden">
-              <img
-                src="/question.svg"
-                alt="group rocher"
-                className="flex justify-center items-center p-2.5"
-              />
-            </div>
-            <div className="custom-logo-experience-lg-right">
-              <img
-                src="/question.svg"
-                alt="group rocher"
-                className="flex justify-center items-center p-2.5"
-              />
-            </div>
-            <h3 className="scroll-m-20 text-lg font-semibold tracking-tight">
-              Comment votre projet ?
-            </h3>
-            <p className="leading-7 [&:not(:first-child)]:my-4">
-              Si vous avez un projet passionnant en tête, je suis prêt à
-              collaborer. N&apos;hésitez pas à me contacter - je suis
-              enthousiaste à l&apos;idée d&apos;explorer de nouvelles
-              opportunités et de discuter de la manière dont nous pouvons
-              travailler ensemble !
-            </p>
-            <div className="absolute top-3 -left-7 ml-0.5 translate-x-1/2 translate-y-1/2">
-              <ArrowLeft />
-            </div>
-          </Card>
+          <motion.div
+            className="flex-[1]"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={cardVariants}
+            transition={{ duration: 0.5 }}
+          >
+            <Card className="custom-card-right-lg hover:shadow-lg border-1px hover:shadow-purple-500/10">
+              <div className="custom-logo-experience-mobile lg:hidden">
+                <img
+                  src="/question.svg"
+                  alt="group rocher"
+                  className="flex justify-center items-center p-2.5"
+                />
+              </div>
+              <div className="custom-logo-experience-lg-right">
+                <img
+                  src="/question.svg"
+                  alt="group rocher"
+                  className="flex justify-center items-center p-2.5"
+                />
+              </div>
+              <h3 className="scroll-m-20 text-lg font-semibold tracking-tight">
+                Comment votre projet ?
+              </h3>
+              <p className="leading-7 [&:not(:first-child)]:my-4">
+                Si vous avez un projet passionnant en tête, je suis prêt à
+                collaborer. N&apos;hésitez pas à me contacter - je suis
+                enthousiaste à l&apos;idée d&apos;explorer de nouvelles
+                opportunités et de discuter de la manière dont nous pouvons
+                travailler ensemble !
+              </p>
+              <div className="absolute top-3 -left-7 ml-0.5 translate-x-1/2 translate-y-1/2">
+                <ArrowLeft />
+              </div>
+            </Card>
+          </motion.div>
 
           {/* Deuxième Card */}
           <Card className="relative p-4 ml-12 lg:mr-20 lg:ml-0 mt-3 hover:shadow-lg border-1px hover:shadow-purple-500/10">
@@ -115,7 +146,6 @@ export default function Experience() {
               </Badge>
             </section>
           </Card>
-
           {/* Troisième Card */}
           <Card className="custom-card-right-lg hover:shadow-lg border-1px hover:shadow-purple-500/10">
             <div className="custom-logo-experience-mobile lg:hidden">
