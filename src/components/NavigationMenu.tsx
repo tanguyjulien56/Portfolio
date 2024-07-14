@@ -1,10 +1,12 @@
+import { Button } from "@/components/ui/button";
 import {
-  Menubar,
-  MenubarContent,
-  MenubarItem,
-  MenubarMenu,
-  MenubarTrigger,
-} from "@/components/ui/menubar";
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuGroup,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { Menubar, MenubarMenu, MenubarTrigger } from "@/components/ui/menubar";
 import { cn } from "@/lib/utils";
 import { Menu } from "lucide-react";
 
@@ -17,7 +19,7 @@ export default function NavigationMenu() {
   };
   return (
     <>
-      <Menubar className={cn("hidden lg:flex")}>
+      <Menubar className={cn("hidden lg:flex m-0 p-0")}>
         <MenubarMenu>
           <MenubarTrigger onClick={() => scrollToSection("section1")}>
             Presentation
@@ -39,27 +41,29 @@ export default function NavigationMenu() {
           </MenubarTrigger>
         </MenubarMenu>
       </Menubar>
-      <Menubar className={cn("lg:hidden")}>
-        <MenubarMenu>
-          <MenubarTrigger>
-            <Menu className="m-auto" />
-          </MenubarTrigger>
-          <MenubarContent>
-            <MenubarItem onClick={() => scrollToSection("section1")}>
+      <DropdownMenu>
+        <DropdownMenuTrigger className={cn("lg:hidden")} asChild>
+          <Button variant="outline">
+            <Menu />
+          </Button>
+        </DropdownMenuTrigger>
+        <DropdownMenuContent className="w-56">
+          <DropdownMenuGroup>
+            <DropdownMenuItem onClick={() => scrollToSection("section1")}>
               Presentation
-            </MenubarItem>
-            <MenubarItem onClick={() => scrollToSection("section2")}>
+            </DropdownMenuItem>
+            <DropdownMenuItem onClick={() => scrollToSection("section2")}>
               Skills
-            </MenubarItem>
-            <MenubarItem onClick={() => scrollToSection("section3")}>
+            </DropdownMenuItem>
+            <DropdownMenuItem onClick={() => scrollToSection("section3")}>
               Experience
-            </MenubarItem>
-            <MenubarItem onClick={() => scrollToSection("section4")}>
+            </DropdownMenuItem>
+            <DropdownMenuItem onClick={() => scrollToSection("section4")}>
               Formation
-            </MenubarItem>
-          </MenubarContent>
-        </MenubarMenu>
-      </Menubar>
+            </DropdownMenuItem>
+          </DropdownMenuGroup>
+        </DropdownMenuContent>
+      </DropdownMenu>
     </>
   );
 }

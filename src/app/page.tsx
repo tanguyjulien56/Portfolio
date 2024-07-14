@@ -1,6 +1,7 @@
-import { FormationAccordion } from "@/components/FormationAccordion";
+import Contact from "@/components/Contact";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
+import { FormationAccordion } from "@/components/FormationAccordion";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Skills from "@/components/Skills";
@@ -34,6 +35,7 @@ export default function Home() {
         Formation
       </Badge>
       <FormationAccordion />
+<Contact />
       <Footer />
     </main>
   );

@@ -22,7 +22,7 @@ export default function Header() {
 
   return (
     <header className="sticky w-full bg-background top-0 right-0 left-0 p-5 z-50">
-      <section className="flex   justify-between">
+      <section className="flex gap-4  justify-between">
         <div className="flex-[1] flex gap-2 items-center">
           <Avatar>
             <AvatarImage src="profile-pic2.png" alt="photo-profil" />
@@ -33,7 +33,7 @@ export default function Header() {
           </div>
         </div>
         <NavigationMenu />
-        <ul className=" fixed bottom-10 right-8 flex items-start gap-2">
+        <ul className=" hidden lg:flex items-start gap-2">
           <Link href="https://github.com/tanguyjulien56">
             <Button
               variant="outline"
@@ -65,7 +65,7 @@ export default function Header() {
             </Button>
           </Link>
         </ul>
-        <div className="pl-2">
+        <div>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button
