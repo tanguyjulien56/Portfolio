@@ -13,24 +13,24 @@ export default function Home() {
     <main className="m-auto max-w-5xl ">
       <Header />
 
-      <Badge variant="outline" className="m-4">
+      <Badge id="section1" variant="outline" className="m-4">
         Présentation
       </Badge>
       <Hero />
       <Spacing size="md" />
-      <Badge variant="outline" className="m-4">
+      <Badge id="section2" variant="outline" className="m-4">
         Skills
       </Badge>
       <Skills />
       <Spacing size="md" />
-      <Badge variant="outline" className="m-4">
+      <Badge id="section3" variant="outline" className="m-4">
         Expérience
       </Badge>
       <Experience />
       <Spacing size="md" />
       <Status />
       <Spacing size="md" />
-      <Badge variant="outline" className="m-4">
+      <Badge id="section4" variant="outline" className="m-4">
         Formation
       </Badge>
       <FormationAccordion />

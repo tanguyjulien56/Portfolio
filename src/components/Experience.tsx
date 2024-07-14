@@ -229,23 +229,23 @@ export default function Experience() {
               />
             </div>
             <h3 className="scroll-m-20 text-lg font-semibold tracking-tight">
-              Responsable industrialisation
+              Coordinateur de production
             </h3>
 
             <p className="text-xs ">Groupe Rocher · CDI</p>
 
             <p className="text-xs text-muted-foreground">
-              août 2012 - dec 2023 · 3 ans et 4 mois
+              juil 2017 - sept 2020 · 3 ans 3 mois
             </p>
             <p className="text-xs text-muted-foreground">
-              Ploërmel, Bretagne, France
+              La Gacilly, Bretagne, France
             </p>
             <p className="leading-7 [&:not(:first-child)]:my-4">
-              Assurer l'amélioration de la performance industrielle au travers
-              de la réduction des CRP, établir la stratégie industrielle du site
-              de production, et manager une équipe de 10 personnes tout en
-              respectant les objectifs du groupe, en optimisant les process
-              associés.
+              Piloter le plan de développement des compétences, garantir la
+              cohérence du système de production, participer à l’amélioration
+              continue en production et aux chantiers d'amélioration
+              transverses, être référent et administrer des systèmes
+              informatiques (transformation digitale, sobriété numérique).
             </p>
             <div className="absolute top-3 -left-7 ml-0.5 translate-x-1/2  translate-y-1/2  ">
               <ArrowLeft />
@@ -261,19 +261,13 @@ export default function Experience() {
                 variant={"outline"}
                 className="shadow-md shadow-purple-500/10"
               >
-                Stratégie
-              </Badge>
-              <Badge
-                variant={"outline"}
-                className="shadow-md shadow-purple-500/10"
-              >
-                CRP
-              </Badge>
-              <Badge
-                variant={"outline"}
-                className="shadow-md shadow-purple-500/10"
-              >
                 Sécurité
+              </Badge>
+              <Badge
+                variant={"outline"}
+                className="shadow-md shadow-purple-500/10"
+              >
+                Formation
               </Badge>
               <Badge
                 variant={"outline"}
@@ -299,23 +293,23 @@ export default function Experience() {
               />
             </div>
             <h3 className="scroll-m-20 text-lg font-semibold tracking-tight">
-              Responsable industrialisation
+              Manager d'équipe de conditionnement
             </h3>
 
             <p className="text-xs ">Groupe Rocher · CDI</p>
 
             <p className="text-xs text-muted-foreground">
-              août 2012 - dec 2023 · 3 ans et 4 mois
+              août 2012 - juil 2017 · 5 ans
             </p>
             <p className="text-xs text-muted-foreground">
-              Ploërmel, Bretagne, France
+              La Gacilly, Bretagne, France
             </p>
             <p className="leading-7 [&:not(:first-child)]:my-4">
-              Assurer l'amélioration de la performance industrielle au travers
-              de la réduction des CRP, établir la stratégie industrielle du site
-              de production, et manager une équipe de 10 personnes tout en
-              respectant les objectifs du groupe, en optimisant les process
-              associés.
+              Manager une équipe de 20 personnes (techniciens et conducteurs de
+              production), garantir la sécurité des collaborateurs et la qualité
+              de service, piloter les activités du périmètre en respectant le
+              plan de production, et identifier et piloter des chantiers
+              d'amélioration de la performance du site.
             </p>
             <div className="absolute top-3 -left-7 ml-0.5 translate-x-1/2  translate-y-1/2  ">
               <ArrowLeft />
@@ -331,25 +325,19 @@ export default function Experience() {
                 variant={"outline"}
                 className="shadow-md shadow-purple-500/10"
               >
-                Stratégie
-              </Badge>
-              <Badge
-                variant={"outline"}
-                className="shadow-md shadow-purple-500/10"
-              >
-                CRP
-              </Badge>
-              <Badge
-                variant={"outline"}
-                className="shadow-md shadow-purple-500/10"
-              >
                 Sécurité
               </Badge>
               <Badge
                 variant={"outline"}
                 className="shadow-md shadow-purple-500/10"
               >
-                Lean
+                Qualité
+              </Badge>
+              <Badge
+                variant={"outline"}
+                className="shadow-md shadow-purple-500/10"
+              >
+                Perforance
               </Badge>
             </section>
           </Card>
@@ -369,20 +357,20 @@ export default function Experience() {
               />
             </div>
             <h3 className="scroll-m-20 text-lg font-semibold tracking-tight">
-              Developpeur Web
+              Responsable plateforme
             </h3>
-            <p className="text-xs ">Alt | Incubateur Tech · CDD</p>
+            <p className="text-xs ">STEF · CDI</p>
             <p className="text-xs text-muted-foreground">
-              déc. 2023 - aujourd’hui · 7 mois
+              mars 2011 - août 2012 · 1 an 6 mois
             </p>
             <p className="text-xs text-muted-foreground">
-              Rennes, Bretagne, France · À distance
+              Yffiniac, Bretagne, France
             </p>
             <p className="leading-7 [&:not(:first-child)]:my-4">
-              Conception et développement d'une plateforme en ligne dédiée à
-              faciliter la coordination entre parents, enseignants et élèves
-              pour la gestion des sorties extra-scolaires et le soutien
-              scolaire.
+              Animer deux équipes (jour et nuit) constituées d’employés et
+              agents de maîtrise concernant le transit de marchandises
+              périssables, assurer la sécurité de la plateforme (biens et
+              personnels), et être le relais sur les démarches d’améliorations.
             </p>
             <div className="hidden lg:block absolute top-3 -right-0.5 translate-x-1/2  translate-y-1/2 ">
               <ArrowRight />
@@ -395,31 +383,19 @@ export default function Experience() {
                 variant={"outline"}
                 className="shadow-md shadow-purple-500/10"
               >
-                React
+                Sécurité
               </Badge>
               <Badge
                 variant={"outline"}
                 className="shadow-md shadow-purple-500/10"
               >
-                Tailwind
+                Management
               </Badge>
               <Badge
                 variant={"outline"}
                 className="shadow-md shadow-purple-500/10"
               >
-                Nestjs
-              </Badge>
-              <Badge
-                variant={"outline"}
-                className="shadow-md shadow-purple-500/10"
-              >
-                Docker
-              </Badge>
-              <Badge
-                variant={"outline"}
-                className="shadow-md shadow-purple-500/10"
-              >
-                Sql
+                Planification
               </Badge>
             </section>
           </Card>
@@ -439,23 +415,22 @@ export default function Experience() {
               />
             </div>
             <h3 className="scroll-m-20 text-lg font-semibold tracking-tight">
-              Responsable industrialisation
+              Responsable logistique
             </h3>
 
-            <p className="text-xs ">Groupe Rocher · CDI</p>
+            <p className="text-xs ">Decathlon · CDI</p>
 
             <p className="text-xs text-muted-foreground">
-              août 2012 - dec 2023 · 3 ans et 4 mois
+              oct 2008 - mars 2011 · 2 ans et 6 mois
             </p>
             <p className="text-xs text-muted-foreground">
-              Ploërmel, Bretagne, France
+              Cagny, Normandie, France
             </p>
             <p className="leading-7 [&:not(:first-child)]:my-4">
-              Assurer l'amélioration de la performance industrielle au travers
-              de la réduction des CRP, établir la stratégie industrielle du site
-              de production, et manager une équipe de 10 personnes tout en
-              respectant les objectifs du groupe, en optimisant les process
-              associés.
+              Préparer, organiser et participer à un déménagement du site,
+              animer une équipe de 15 à 20 personnes sur des objectifs, recruter
+              des CDI, CDD et intérimaires et développer les compétences, gérer
+              en autonomie l’entrepôt en matière de sécurité et d'activité
             </p>
             <div className="absolute top-3 -left-7 ml-0.5 translate-x-1/2  translate-y-1/2  ">
               <ArrowLeft />
