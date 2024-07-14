@@ -82,7 +82,7 @@
     position: absolute;
     justify-content: center;
     align-items: center;
-    right: -114px; /* Equivalent to -right-28 */
+    right: -116px; /* Equivalent to -right-28 */
     top: 0.25rem; /* Equivalent to top-1 */
     background-color: white; /* Equivalent to bg-white */
     border: 1px solid #d1d5db; /* Equivalent to border-gray-300 */
@@ -108,7 +108,7 @@
     margin-left: 0; /* Equivalent to lg:ml-0 */
     margin-right: 5rem; /* Equivalent to lg:mr-20 */
     margin-top: 0.75rem; /* Equivalent to lg:mt-3 */
-    transform: translateX(560px); /* Move the card out to the right */
+    transform: translateX(580px); /* Move the card out to the right */
   }
 }
 
@@ -121,7 +121,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    left: -99px; /* Equivalent to -left-20 */
+    left: -117px; /* Equivalent to -left-20 */
     top: 0.25rem; /* Equivalent to top-1 */
     background-color: white; /* Equivalent to bg-white */
     border: 1px solid #d1d5db; /* Equivalent to border-gray-300 */

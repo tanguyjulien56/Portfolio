@@ -1,4 +1,4 @@
-import { FormationAccordion } from "@/components/Accordion";
+import { FormationAccordion } from "@/components/FormationAccordion";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -18,7 +18,9 @@ export default function Home() {
       </Badge>
       <Hero />
       <Spacing size="md" />
-
+      <Badge variant="outline" className="m-4">
+        Skills
+      </Badge>
       <Skills />
       <Spacing size="md" />
       <Badge variant="outline" className="m-4">

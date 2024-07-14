@@ -40,9 +40,6 @@ const Skills = () => {
         variants={titleVariants}
         transition={{ duration: 0.5 }}
       >
-        <Badge variant="outline" className="m-4">
-          Skills
-        </Badge>
         <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0 text-primary">
           I love to work on...
         </h2>

@@ -32,7 +32,7 @@ export default function Header() {
           </div>
         </div>
         <ul className=" flex items-start gap-2">
-          <Link href="/">
+          <Link href="https://github.com/tanguyjulien56">
             <Button
               variant="outline"
               className=" hover:shadow-md hover:shadow-purple-500/10"
@@ -40,7 +40,7 @@ export default function Header() {
               <GitHubIcon size={16} className="text-foreground color-primary" />
             </Button>
           </Link>
-          <Link href="/">
+          <Link href="https://www.linkedin.com/in/julientanguy56/">
             <Button
               variant="outline"
               className=" hover:shadow-md hover:shadow-purple-500/10"
@@ -51,7 +51,7 @@ export default function Header() {
               />
             </Button>
           </Link>
-          <Link href="/">
+          <Link href="https://www.notion.so/D-veloppeur-Web-React-Next-js-NestJS-Docker-1a68dfa1b0544ddab03469846cb2f959">
             <Button
               variant="outline"
               className=" hover:shadow-md hover:shadow-purple-500/10"

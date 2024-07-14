@@ -26,9 +26,6 @@ export default function Experience() {
         variants={titleVariants}
         transition={{ duration: 0.5 }}
       >
-        <Badge variant="outline" className="m-4">
-          Skills
-        </Badge>
         <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0 text-primary">
           talk about my experience
         </h2>
@@ -44,7 +41,7 @@ export default function Experience() {
             variants={cardVariants}
             transition={{ duration: 0.5 }}
           >
-            <Card className="custom-card-right-lg hover:shadow-lg border-1px hover:shadow-purple-500/10">
+            <Card className="custom-card-right-lg hover:shadow-lg border-1px hover:shadow-purple-500/10 align-right">
               <div className="custom-logo-experience-mobile lg:hidden">
                 <img
                   src="/question.svg"
@@ -60,12 +57,11 @@ export default function Experience() {
                 />
               </div>
               <h3 className="scroll-m-20 text-lg font-semibold tracking-tight">
-                Comment votre projet ?
+                Votre projet ?
               </h3>
-              <p className="leading-7 [&:not(:first-child)]:my-4">
-                Si vous avez un projet passionnant en tête, je suis prêt à
-                collaborer. N&apos;hésitez pas à me contacter - je suis
-                enthousiaste à l&apos;idée d&apos;explorer de nouvelles
+              <p className="leading-7 [&:not(:first-child)]:mt-6">
+                Si vous avez un projet passionnant en tête, N'hésitez pas à me
+                contacter. Je suis enthousiaste à l'idée d'explorer de nouvelles
                 opportunités et de discuter de la manière dont nous pouvons
                 travailler ensemble !
               </p>
