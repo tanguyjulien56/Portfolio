@@ -44,15 +44,15 @@ export default function Hero() {
         </h3>
         <p className="leading-7 [&:not(:first-child)]:mt-6">
           En transition vers le développement web, je mets à profit plus de 15
-          ans d'expérience en{" "}
+          ans d'expérience en
           <Code className="inline-flex items-center gap-1 rounded">
             <span role="img" aria-label="engineering">
               🧑‍🎓
             </span>
             ingénierie
-          </Code>{" "}
+          </Code>
           de production, gestion de projet et amélioration continue. Certifié en
-          développement{" "}
+          développement
           <Code className="inline-flex items-center rounded">
             <span role="img" aria-label="full stack">
               🚀
