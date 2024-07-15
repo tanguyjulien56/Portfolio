@@ -39,6 +39,7 @@ export default function Home() {
       </Badge>
       <FormationAccordion />
       <Contact />
+      <Spacing size="md" />
       <Footer />
     </main>
   );
