@@ -146,3 +146,8 @@
 .card-3d:hover {
   transform: rotateY(10deg) rotateX(5deg) translateZ(10px);
 }
+.offset-anchor {
+  position: relative;
+  padding-top: 100px;
+  margin-top: -100px;
+}

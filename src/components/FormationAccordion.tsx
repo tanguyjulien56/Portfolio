@@ -29,7 +29,7 @@ export function FormationAccordion() {
         transition={{ duration: 0.5 }}
       >
         <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0 text-primary">
-          I'm proud of my formation
+          Je suis fier de mon parcours !
         </h2>
       </motion.div>
       <Card className="flex flex-col w-full gap-2 px-2 hover:shadow-lg hover:shadow-purple-500/10">

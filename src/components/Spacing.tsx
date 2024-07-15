@@ -8,7 +8,7 @@ export const Spacing = ({ size = "md" }: SpacingProps) => {
       className={cn({
         "h-8": size === "sm",
         "h-16": size === "md",
-        "h-60": size === "lg",
+        "h-32": size === "lg",
       })}
     />
   );

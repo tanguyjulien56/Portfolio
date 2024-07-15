@@ -36,39 +36,40 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
         >
           <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0 text-primary">
-            Who am I?
+            Qui-je suis ?
           </h2>
         </motion.div>
         <h3 className="text-3xl font-caption">
-          Développeur Full Stack React, Node.js, Next.js
+          Développeur Full Stack React, Next.js et Nest.js
         </h3>
         <p className="leading-7 [&:not(:first-child)]:mt-6">
-          Transitioning into full stack web development, I am passionate about
-          leveraging over 15 years of experience in production
+          En transition vers le développement web, je mets à profit plus de 15
+          ans d'expérience en{" "}
           <Code className="inline-flex items-center gap-1 rounded">
             <span role="img" aria-label="engineering">
               🧑‍🎓
             </span>
-            engineering
-          </Code>
-          , project management, and continuous improvement. Certified in
+            ingénierie
+          </Code>{" "}
+          de production, gestion de projet et amélioration continue. Certifié en
+          développement{" "}
           <Code className="inline-flex items-center rounded">
             <span role="img" aria-label="full stack">
               🚀
             </span>
             full stack
           </Code>
-          development and contributing to open-source projects, I merge
-          technical skills with management expertise. Outside of work, I am an
-          avid sports enthusiast and actively involved in community engagement,
-          managing communication and the website for my
+          et contributeur à des projets open-source, je combine mes compétences
+          techniques avec une solide expertise en gestion de projet. En dehors
+          du travail, je suis passionné de sport et je m'implique activement
+          dans ma communauté en gérant la communication et le site web de mon
+          club de
           <Code className="inline-flex items-center gap-1 rounded">
             <span role="img" aria-label="cycling">
               🚴‍♂️
             </span>
             cycling
           </Code>
-          club.
         </p>
       </div>
       <div className="flex-[2] m-auto">

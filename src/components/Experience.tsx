@@ -27,7 +27,7 @@ export default function Experience() {
         transition={{ duration: 0.5 }}
       >
         <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0 text-primary">
-          talk about my experience
+          Parlons de mes expériences
         </h2>
       </motion.div>
       <section className="relative ml-10 flex max-md:flex-col lg:ml-0">

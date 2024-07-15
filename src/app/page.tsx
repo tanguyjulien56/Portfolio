@@ -6,36 +6,39 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Skills from "@/components/Skills";
 import { Spacing } from "@/components/Spacing";
-import Status from "@/components/Status";
 import { Badge } from "@/components/ui/badge";
 
 export default function Home() {
   return (
     <main className="m-auto max-w-5xl ">
       <Header />
-
-      <Badge id="section1" variant="outline" className="m-4">
+      <Spacing size="lg" />
+      <div id="section1" className="offset-anchor"></div>
+      <Badge variant="outline" className="m-4">
         Présentation
       </Badge>
       <Hero />
       <Spacing size="md" />
-      <Badge id="section2" variant="outline" className="m-4">
+      <div id="section2" className="offset-anchor"></div>
+      <Badge variant="outline" className="m-4">
         Skills
       </Badge>
       <Skills />
       <Spacing size="md" />
-      <Badge id="section3" variant="outline" className="m-4">
+      <div id="section3" className="offset-anchor"></div>
+      <Badge variant="outline" className="m-4">
         Expérience
       </Badge>
       <Experience />
       <Spacing size="md" />
-      <Status />
+      {/* <Status /> */}
       <Spacing size="md" />
-      <Badge id="section4" variant="outline" className="m-4">
+      <div id="section4" className="offset-anchor"></div>
+      <Badge variant="outline" className="m-4">
         Formation
       </Badge>
       <FormationAccordion />
-<Contact />
+      <Contact />
       <Footer />
     </main>
   );

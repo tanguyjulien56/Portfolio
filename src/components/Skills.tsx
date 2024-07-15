@@ -4,7 +4,6 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { ComponentPropsWithoutRef } from "react";
 import Section from "./Section";
-import { Badge } from "./ui/badge";
 import { Card } from "./ui/card";
 import DockerIcon from "./ui/icon/DockerIcon";
 import NIcon from "./ui/icon/NIcon";
@@ -41,7 +40,7 @@ const Skills = () => {
         transition={{ duration: 0.5 }}
       >
         <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0 text-primary">
-          I love to work on...
+          J'aime travailler sur...
         </h2>
       </motion.div>
       <section className="flex max-md:flex-col gap-5">
@@ -59,8 +58,8 @@ const Skills = () => {
             </h4>
             <ReactIcon size={64} />
             <p className="leading-7 [&:not(:first-child)]:mt-6">
-              My main framework is <Code>React</Code>. I also use{" "}
-              <Code>Next.js</Code> as back and front frameworks.
+              J'utilise principalement la librairie <Code>React</Code>.
+              J'utilise également le framework <Code>Next.js</Code>
             </p>
           </Card>
         </motion.div>
@@ -79,8 +78,8 @@ const Skills = () => {
             </h4>
             <NIcon size={64} />
             <p className="leading-7 [&:not(:first-child)]:mt-6">
-              I use <Code>Nest.js</Code> as the backend for my projects because
-              of its robust and scalable architecture.
+              Pour le back-end, j'utilise <Code>Nest.js</Code> pour mes projets
+              en raison de son architecture robuste et évolutive.
             </p>
           </Card>
         </motion.div>
@@ -99,8 +98,8 @@ const Skills = () => {
             </h4>
             <DockerIcon size={64} />
             <p className="leading-7 [&:not(:first-child)]:mt-6">
-              I use <Code>Docker</Code> to containerize my applications,
-              ensuring consistency across different environments.
+              J'utilise <Code>Docker</Code> pour containeriser mes apps et
+              garantir la cohérence entre les différents environnements.
             </p>
           </Card>
         </motion.div>
