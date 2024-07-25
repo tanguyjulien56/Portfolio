@@ -5,9 +5,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { motion } from "framer-motion";
 import Section from "./Section";
 import { Card } from "./ui/card";
-import { motion } from "framer-motion";
 
 export function FormationAccordion() {
   const cardVariants = {
@@ -21,7 +21,7 @@ export function FormationAccordion() {
   };
   return (
     <Section className="flex flex-col gap-5">
-    <motion.div
+      <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -75,9 +75,17 @@ export function FormationAccordion() {
                   Etablir les cas d’utilisations d’une application et maquetter
                   ses interfaces
                 </li>
-                <li>Développer la partie web responsive d’une application</li>
-                <li>Développer la version mobile d’une application</li>
-                <li>Pratiquer des tests unitaires</li>
+                <li>
+                  Développer la partie front avec react en responsive d’une
+                  application
+                </li>
+                <li>Développer la partie back avec NestJS</li>
+                <li>Communiquer avec la bdd en sql et en nosql avec mongodb</li>
+                <li>Pratiquer des plans de test</li>
+                <li>
+                  automatiser le déploiement del'application sur Docker avec
+                  Gitlab
+                </li>
               </ul>
             </AccordionContent>
           </AccordionItem>
