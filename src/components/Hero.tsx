@@ -68,7 +68,7 @@ export default function Hero() {
             <span role="img" aria-label="cycling">
               🚴‍♂️
             </span>
-            cycling
+            cyclisme
           </Code>
         </p>
       </div>
