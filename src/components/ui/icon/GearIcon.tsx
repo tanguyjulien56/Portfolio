@@ -5,7 +5,7 @@ export default function GearIcon(
 ) {
   return (
     <svg
-      fill="#ffffff"
+      fill="currentColor"
       width={props.size}
       height={props.size}
       version="1.1"

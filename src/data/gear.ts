@@ -15,7 +15,14 @@ export const gears = [
     rotation: "rotate-self-inverse",
     color: "fill-customColors",
   },
-  { cx: 20, cy: 50, r: 30, speed: 12, rotation: "rotate-self" },
+  {
+    cx: 20,
+    cy: 50,
+    r: 30,
+    speed: 12,
+    rotation: "rotate-self",
+    color: "fill-currentColor",
+  },
   {
     cx: 45,
     cy: 45,
@@ -25,6 +32,20 @@ export const gears = [
     color: "fill-customColors",
   },
   {
+    cx: 99,
+    cy: 55,
+    r: 25,
+    speed: 10,
+    rotation: "rotate-self-inverse",
+  },
+  {
+    cx: 50,
+    cy: 28,
+    r: 25,
+    speed: 10,
+    rotation: "rotate-self",
+  },
+  {
     cx: 75,
     cy: 7,
     r: 50,
@@ -32,7 +53,13 @@ export const gears = [
     rotation: "rotate-self",
     color: "fill-customColors",
   },
-  { cx: 61, cy: 0, r: 25, speed: 10, rotation: "rotate-self-inverse" },
+  {
+    cx: 61,
+    cy: 0,
+    r: 25,
+    speed: 10,
+    rotation: "rotate-self-inverse",
+  },
   { cx: 43, cy: 3, r: 20, speed: 8, rotation: "rotate-self" },
   {
     cx: 120,
