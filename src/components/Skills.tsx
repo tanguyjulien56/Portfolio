@@ -56,7 +56,13 @@ const Skills = () => {
             <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">
               React
             </h4>
-            <ReactIcon size={64} />
+            <ReactIcon
+              size={64}
+              className="rotate-self"
+              style={{
+                animationDuration: "infinite",
+              }}
+            />
             <p className="leading-7 [&:not(:first-child)]:mt-6">
               J'utilise principalement la librairie <Code>React</Code>.
               J'utilise également le framework <Code>Next.js</Code>

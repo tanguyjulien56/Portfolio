@@ -151,4 +151,28 @@
   padding-top: 100px;
   margin-top: -100px;
 }
+@keyframes rotateSelf {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotateSelfInverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
 
+.rotate-self {
+  animation: rotateSelf 10s infinite linear;
+  transform-origin: center;
+}
+.rotate-self-inverse {
+  animation: rotateSelfInverse 10s infinite linear;
+  transform-origin: center;
+}

@@ -1,18 +1,8 @@
 "use client";
-import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
-import { ComponentPropsWithoutRef } from "react";
+import BrainWithGears from "./BrainWithGears";
 import Section from "./Section";
-
-const Code = ({ className, ...props }: ComponentPropsWithoutRef<"span">) => (
-  <span
-    className={cn(
-      "bg-accent/30 font-mono border border-accent px-1 py-0 mx-1 rounded-sm hover:bg-accent/50 transition-colors",
-      className
-    )}
-    {...props}
-  />
-);
+import Code from "./ui/Code";
 
 const cardVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -72,12 +62,10 @@ export default function Hero() {
           </Code>
         </p>
       </div>
-      <div className="flex-[2] m-auto">
-        <img
-          src="/profile-pic.png"
-          className="rounded-full w-full m-auto h-auto max-w-xs max-md:w-56 shadow-lg shadow-purple-700/10"
-          alt="Profile"
-        />
+      <div className="flex-[2] flex justify-center md:justify-end">
+        <div className=" m-auto h-auto w-full flex justify-center items-center">
+          <BrainWithGears />
+        </div>
       </div>
     </Section>
   );
