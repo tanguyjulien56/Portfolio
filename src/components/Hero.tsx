@@ -16,7 +16,7 @@ const titleVariants = {
 
 export default function Hero() {
   return (
-    <Section className="flex max-md:flex-col gap-5 items-center">
+    <Section className="flex max-md:flex-col-reverse gap-5 items-center">
       <div className="flex-[3] flex flex-col gap-5">
         <motion.div
           initial="hidden"
