@@ -5,7 +5,7 @@ import GearIcon from "./ui/icon/GearIcon";
 
 export default function BrainWithGears() {
   return (
-    <div className="w-[320px] h-[290px] relative">
+    <div className="w-[320px] h-[240px] relative">
       <div className="relative w-[200px] h-[200px]">
         {gears.map((gear, index) => {
           // eslint-disable-next-line react-hooks/rules-of-hooks

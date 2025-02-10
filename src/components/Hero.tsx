@@ -20,8 +20,8 @@ export default function Hero() {
       <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0 text-primary">
         Qui-je suis ?
       </h2>
-      <h3 className="text-3xl font-caption pb-2">
-        Développeur Full Stack React, Next.js et Nest.js
+      <h3 className="text-3xl font-caption pb-6 lg:p-0">
+        Développeur Full Stack React, Node.js
       </h3>
       <Section className="flex max-md:flex-col-reverse gap-5 items-center">
         <div className="flex-[3] flex flex-col gap-5">
