@@ -17,7 +17,7 @@ export default function BrainWithGears() {
               // Accélération initiale (rotation rapide)
               await controls.start({
                 rotate: [0, gear.rotation === "rotate-self" ? 1440 : -1440],
-                transition: { duration: gear.speed / 2, ease: "easeOut" },
+                transition: { duration: gear.speed / 1, ease: "easeOut" },
               });
 
               // Stabilisation à une vitesse normale
