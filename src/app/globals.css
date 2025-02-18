@@ -138,14 +138,6 @@
   border-radius: 50%;
   background: var(--accent);
 }
-.card-3d {
-  transition: transform 0.3s ease;
-  perspective: 1000px;
-}
-
-.card-3d:hover {
-  transform: rotateY(10deg) rotateX(5deg) translateZ(10px);
-}
 .offset-anchor {
   position: relative;
   padding-top: 100px;

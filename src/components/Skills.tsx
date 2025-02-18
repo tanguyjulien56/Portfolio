@@ -4,10 +4,11 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { ComponentPropsWithoutRef } from "react";
 import Section from "./Section";
-import { Card } from "./ui/card";
 import DockerIcon from "./ui/icon/DockerIcon";
 import NIcon from "./ui/icon/NIcon";
 import ReactIcon from "./ui/icon/ReactIcon";
+
+import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 
 const Code = ({ className, ...props }: ComponentPropsWithoutRef<"span">) => (
   <span
@@ -18,11 +19,6 @@ const Code = ({ className, ...props }: ComponentPropsWithoutRef<"span">) => (
     {...props}
   />
 );
-
-const cardVariants = {
-  hidden: { opacity: 0, y: 10 },
-  visible: { opacity: 1, y: 0 },
-};
 
 const titleVariants = {
   hidden: { opacity: 0, y: -10 },
@@ -43,72 +39,67 @@ const Skills = () => {
           J'aime travailler sur...
         </h2>
       </motion.div>
-      <section className="flex max-md:flex-col gap-5">
-        <motion.div
-          className="flex-[1]"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={cardVariants}
-          transition={{ duration: 0.5 }}
-        >
-          <Card className="card-3d flex flex-col gap-2 p-4 shadow-md hover:shadow-lg items-center justify-center hover:shadow-purple-500/10">
-            <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">
+      <section className="grid md:grid-cols-3 gap-5 h-full">
+        <CardContainer className=" inter-var h-full ">
+          <CardBody className="group/card shadow-md hover:shadow-lg hover:shadow-purple-500/10 rounded-xl p-4 border flex flex-col justify-center items-center gap-4">
+            <CardItem translateZ="50" className="text-xl font-bold">
               React
-            </h4>
-            <ReactIcon
-              size={64}
-              className="rotate-self"
-              style={{
-                animationDuration: "infinite",
-              }}
-            />
-            <p className="leading-7 [&:not(:first-child)]:mt-6">
-              J'utilise principalement la librairie <Code>React</Code>.
-              J'utilise également le framework <Code>Next.js</Code>
-            </p>
-          </Card>
-        </motion.div>
+            </CardItem>
 
-        <motion.div
-          className="flex-[1]"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={cardVariants}
-          transition={{ duration: 0.5 }}
-        >
-          <Card className="card-3d flex flex-col gap-2 p-4 shadow-md hover:shadow-lg items-center justify-center hover:shadow-purple-500/10">
-            <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">
+            <CardItem translateZ="100">
+              <ReactIcon
+                size={64}
+                className="rotate-self"
+                style={{
+                  animationDuration: "infinite",
+                }}
+              />
+            </CardItem>
+
+            <CardItem translateZ={20}>
+              <p className="leading-7 [&:not(:first-child)]:mt-6">
+                J'utilise principalement la librairie <Code>React</Code>.
+                J'utilise également le framework <Code>Next.js</Code>
+              </p>
+            </CardItem>
+          </CardBody>
+        </CardContainer>
+        <CardContainer className="inter-var h-full ">
+          <CardBody className="  group/card shadow-md hover:shadow-lg hover:shadow-purple-500/10 rounded-xl p-4 border flex flex-col justify-center items-center gap-4 ">
+            <CardItem translateZ="50" className="text-xl font-bold">
               Nest.js
-            </h4>
-            <NIcon size={64} />
-            <p className="leading-7 [&:not(:first-child)]:mt-6">
-              Pour le back-end, j'utilise <Code>Nest.js</Code> pour mes projets
-              en raison de son architecture robuste et évolutive.
-            </p>
-          </Card>
-        </motion.div>
+            </CardItem>
 
-        <motion.div
-          className="flex-[1]"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={cardVariants}
-          transition={{ duration: 0.5 }}
-        >
-          <Card className="card-3d flex flex-col gap-2 p-4 shadow-md hover:shadow-lg items-center justify-center hover:shadow-purple-500/10">
-            <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">
+            <CardItem translateZ="100">
+              <NIcon size={64} />
+            </CardItem>
+
+            <CardItem translateZ={20}>
+              <p className="leading-7 [&:not(:first-child)]:mt-6">
+                Pour le back-end, j'utilise <Code>Nest.js</Code> pour mes
+                projets en raison de son architecture robuste et évolutive.
+              </p>
+            </CardItem>
+          </CardBody>
+        </CardContainer>
+        <CardContainer className="inter-var h-full">
+          <CardBody className="  group/card shadow-md hover:shadow-lg hover:shadow-purple-500/10 rounded-xl p-4 border flex flex-col justify-center items-center gap-4 ">
+            <CardItem translateZ="50" className="text-xl font-bold">
               Docker
-            </h4>
-            <DockerIcon size={64} />
-            <p className="leading-7 [&:not(:first-child)]:mt-6">
-              J'utilise <Code>Docker</Code> pour containeriser mes apps et
-              garantir la cohérence entre les différents environnements.
-            </p>
-          </Card>
-        </motion.div>
+            </CardItem>
+
+            <CardItem translateZ="100">
+              <DockerIcon size={64} />
+            </CardItem>
+
+            <CardItem translateZ={20}>
+              <p className="leading-7 [&:not(:first-child)]:mt-6">
+                J'utilise <Code>Docker</Code> pour containeriser mes apps et
+                garantir la cohérence entre les différents environnements.
+              </p>
+            </CardItem>
+          </CardBody>
+        </CardContainer>
       </section>
     </Section>
   );
