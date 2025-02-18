@@ -39,9 +39,9 @@ const Skills = () => {
           J'aime travailler sur...
         </h2>
       </motion.div>
-      <section className="grid md:grid-cols-3 gap-5 h-full">
+      <Section className="grid md:grid-cols-3 gap-5 h-max-96">
         <CardContainer className=" inter-var h-full ">
-          <CardBody className="group/card shadow-md hover:shadow-lg hover:shadow-purple-500/10 rounded-xl p-4 border flex flex-col justify-center items-center gap-4">
+          <CardBody className="group/card h-full shadow-md hover:shadow-lg hover:shadow-purple-500/10 rounded-xl p-4 border flex flex-col justify-start items-center gap-4">
             <CardItem translateZ="50" className="text-xl font-bold">
               React
             </CardItem>
@@ -100,7 +100,7 @@ const Skills = () => {
             </CardItem>
           </CardBody>
         </CardContainer>
-      </section>
+      </Section>
     </Section>
   );
 };
