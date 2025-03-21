@@ -45,14 +45,14 @@ export default function Experience() {
               <div className="custom-logo-experience-mobile lg:hidden">
                 <img
                   src="/question.svg"
-                  alt="group rocher"
+                  alt="question"
                   className="flex justify-center items-center p-2.5"
                 />
               </div>
               <div className="custom-logo-experience-lg-right">
                 <img
                   src="/question.svg"
-                  alt="group rocher"
+                  alt="question"
                   className="flex justify-center items-center p-2.5"
                 />
               </div>

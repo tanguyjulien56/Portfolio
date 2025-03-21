@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import GearIcon from "./ui/icon/GearIcon";
 
 export default function BrainWithGears() {
+  
   return (
     <div className="w-[320px] h-[240px] relative">
       <div className="relative w-[200px] h-[200px]">
